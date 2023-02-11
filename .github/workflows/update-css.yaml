@@ -30,7 +30,6 @@ jobs:
         if: steps.updated-or-not.outputs.updated == 'true'
         #needs to be quoted
         with:
-          fetch: false
           add: "theme.css"
           message: "[ci] update theme.css"
           committer_name: GitHub Actions
